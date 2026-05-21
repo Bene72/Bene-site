@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bene72.github.io/Bene-site/sitemap.xml

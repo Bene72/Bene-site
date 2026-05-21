@@ -14,6 +14,8 @@ Site vitrine de Benoit, coach CrossFit & Hyrox a Nantes.
 │   ├── Le_Mans_Contest_wod1-254.jpg
 │   └── LRSY_Throwdown_Crossfit_2k24__46_.jpg
 ├── package.json
+├── robots.txt
+├── sitemap.xml
 └── vercel.json
 ```
 
@@ -25,6 +27,7 @@ Tout le contenu principal est dans `index.html`.
 - Images: remplacer les fichiers dans `images/` en gardant les memes noms.
 - Couleurs: modifier les variables CSS dans `:root`.
 - Contact: le formulaire ouvre un email pre-rempli vers `benedetto.allen@gmail.com`.
+- SEO: `robots.txt`, `sitemap.xml`, balises Open Graph et donnees structurees sont incluses.
 
 ## Tester en local
 
