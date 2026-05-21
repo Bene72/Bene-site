@@ -24,7 +24,7 @@ Tout le contenu principal est dans `index.html`.
 - Textes: modifier les sections HTML.
 - Images: remplacer les fichiers dans `images/` en gardant les memes noms.
 - Couleurs: modifier les variables CSS dans `:root`.
-- Contact: le formulaire ouvre un email pre-rempli vers `contact@benfit.fr`.
+- Contact: le formulaire ouvre un email pre-rempli vers `benedetto.allen@gmail.com`.
 
 ## Tester en local
 
