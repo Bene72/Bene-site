@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coach CrossFit & Hyrox à Nantes | Ben&Fit par Benoit "Bene" Allen</title>
+<meta name="description" content="Coach CrossFit, Hyrox et préparation physique à Nantes. Programmes sur-mesure, correction technique, nutrition, coaching online et suivi premium avec Bene.">
+<meta name="author" content="Benoit Allen">
+<meta name="robots" content="index, follow">
+<meta name="format-detection" content="telephone=no, date=no, email=no, address=no">
+<link rel="canonical" href="https://bene-site.vercel.app/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Coach CrossFit & Hyrox à Nantes | Ben&Fit">
+<meta property="og:description" content="Coaching sportif sur-mesure à Nantes et online : CrossFit, Hyrox, nutrition, correction technique et suivi premium avec Bene.">
+<meta property="og:image" content="https://bene-site.vercel.app/images/gallery-main.webp">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bene-site.vercel.app/">
+<meta property="og:locale" content="fr_FR">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Coach CrossFit & Hyrox à Nantes | Ben&Fit">
+<meta name="twitter:description" content="Programmes sportifs sur-mesure, préparation Hyrox, CrossFit, nutrition et coaching premium avec Bene à Nantes.">
+<meta name="twitter:image" content="https://bene-site.vercel.app/images/gallery-main.webp">
+
+<!-- Favicon -->
+<link rel="icon" href="images/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="images/logo.webp">
+<meta name="theme-color" content="#0a1628">
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsActivityLocation",
+  "@id": "https://bene-site.vercel.app/#benfit",
+  "name": "Ben&Fit",
+  "url": "https://bene-site.vercel.app/",
+  "image": "https://bene-site.vercel.app/images/gallery-main.webp",
+  "logo": "https://bene-site.vercel.app/images/logo.webp",
+  "description": "Coaching CrossFit, Hyrox, préparation physique, nutrition et coaching online à Nantes avec Benoit Allen, appelé Bene.",
+  "email": "benedetto.allen@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Nantes",
+    "addressRegion": "Pays de la Loire",
+    "addressCountry": "FR"
+  },
+  "areaServed": ["Nantes", "Pays de la Loire", "France"],
+  "sameAs": ["https://www.instagram.com/bene__fit"],
+  "founder": {
+    "@type": "Person",
+    "name": "Benoit Allen",
+    "alternateName": "Bene",
+    "jobTitle": "Coach CrossFit et Hyrox"
+  },
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "name": "Essentia Plus",
+      "price": "77",
+      "priceCurrency": "EUR",
+      "description": "Programme sportif sur-mesure, correction technique, coaching avec réponse sous 48h, conseils nutrition et bilan hebdomadaire détaillé."
+    },
+    {
+      "@type": "Offer",
+      "name": "Tutto Bene",
+      "price": "109",
+      "priceCurrency": "EUR",
+      "description": "Programme sport + nutrition, support quotidien 7j/7, progression optimisée et une visio par mois."
+    },
+    {
+      "@type": "Offer",
+      "name": "Bene Evoluzione",
+      "price": "255",
+      "priceCurrency": "EUR",
+      "description": "Coaching premium avec deux appels visio par semaine, messages quotidiens, analyses vidéo illimitées et ajustements constants."
+    }
+  ]
+}
+</script>
+
+<!-- Fonts self-hosted — zero dependance externe -->
+<link rel="preload" href="/assets/fonts/bebas-neue-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
+
+<style>*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}:root{--navy:#0a1628;--navy-mid:#112040;--blue:#1a3a6e;--blue-brand:#1e3f8f;--accent:#e8c84a;--accent-dim:#c9a82e;--white:#f5f3ee;--gray:#8a8a8a;--light-bg:#f0ede6;--text-muted:rgba(245,243,238,0.70);--text-dim:rgba(245,243,238,0.50)}html{scroll-behavior:auto}body{background:var(--navy);color:var(--white);font-family:'Barlow',sans-serif;font-weight:300;overflow-x:hidden}:focus-visible{outline:2px solid var(--accent);outline-offset:3px}nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.2rem 3rem;background:rgba(10,22,40,0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(232,200,74,0.15)}.nav-logo{display:flex;align-items:center;gap:.8rem;text-decoration:none}.nav-logo img{height:44px;width:44px;object-fit:contain}.nav-brand{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:.08em;color:var(--accent)}.nav-links{display:flex;gap:2.5rem;list-style:none}.nav-links a{color:var(--white);text-decoration:none;font-family:'Barlow Condensed',sans-serif;font-size:.85rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;opacity:.75;transition:opacity .2s,color .2s}.nav-links a:hover,.nav-links a:focus-visible{opacity:1;color:var(--accent)}.nav-cta{background:var(--accent)!important;color:var(--navy)!important;padding:.55rem 1.4rem;opacity:1!important;font-weight:700!important}.nav-burger{display:none;flex-direction:column;justify-content:center;gap:5px;width:40px;height:40px;background:none;border:1px solid rgba(232,200,74,0.3);border-radius:4px;cursor:pointer;padding:6px;flex-shrink:0}.nav-burger span{display:block;height:2px;background:var(--white);transition:transform .3s,opacity .3s;transform-origin:center}.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden;padding-top:73px}.hero-left{display:flex;flex-direction:column;justify-content:center;padding:6rem 3rem 6rem 5rem;position:relative;z-index:2}.hero-tag{font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);margin-bottom:1.5rem;display:flex;align-items:center;gap:.75rem}.hero-tag::before{content:'';display:block;width:32px;height:2px;background:var(--accent);flex-shrink:0}.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(4rem,7vw,7.5rem);line-height:.9;letter-spacing:.02em;margin-bottom:2rem}.hero-title span{color:var(--accent)}.hero-desc{font-size:1.05rem;line-height:1.8;color:var(--text-muted);max-width:440px;margin-bottom:3rem}.hero-btns{display:flex;gap:1rem;flex-wrap:wrap}.btn-primary{background:var(--accent);color:var(--navy);padding:.9rem 2.2rem;font-family:'Barlow Condensed',sans-serif;font-size:.9rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;text-decoration:none;transition:background .2s,transform .2s;display:inline-block}.btn-outline{border:1.5px solid rgba(245,243,238,0.35);color:var(--white);padding:.9rem 2.2rem;font-family:'Barlow Condensed',sans-serif;font-size:.9rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;text-decoration:none;transition:border-color .2s,color .2s,transform .2s;display:inline-block}.hero-right{position:relative;overflow:hidden}.hero-right img:not(.hero-overlay-logo){width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(30%)}.hero-right::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,var(--navy) 0%,transparent 30%),linear-gradient(to top,var(--navy) 0%,transparent 25%);pointer-events:none}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}@media(max-width:900px){nav{padding:1rem 1.5rem}.nav-links{display:none}.nav-burger{display:flex}.hero{grid-template-columns:1fr}.hero-right{min-height:420px}.hero-left{padding:3rem 1.5rem}}@media(max-width:560px){.hero-title{font-size:4rem}.hero-right{min-height:360px}}.page-loader{position:fixed;inset:0;z-index:9999;background:#0a1628;pointer-events:none}</style>
+<!-- CSS complet chargé de façon non-bloquante -->
+<link rel="preload" href="/assets/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/assets/main.css"></noscript>
+</head>
+<body>
+
+<!-- NAV -->
+
+<!-- SVG filter pour liquid effect -->
+<svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+  <defs>
+    <filter id="liquid-filter" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="turbulence" baseFrequency="0.015 0.008" numOctaves="3" seed="2" result="noise">
+        <animate attributeName="baseFrequency"
+          values="0.015 0.008;0.025 0.015;0.015 0.008"
+          dur="6s" repeatCount="indefinite"/>
+      </feTurbulence>
+      <feDisplacementMap in="SourceGraphic" in2="noise"
+        scale="0" xChannelSelector="R" yChannelSelector="G"
+        result="displaced">
+        <animate attributeName="scale"
+          values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;28;14;0;0"
+          dur="4s" begin="indefinite" id="liquidAnim"/>
+      </feDisplacementMap>
+      <feComposite in="displaced" in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+</svg>
+<!-- Page loader (volet) -->
+<div class="page-loader" aria-hidden="true"></div>
+
+<nav aria-label="Navigation principale">
+  <a href="#" class="nav-logo" aria-label="Ben&Fit — retour à l'accueil">
+    <picture>
+      <source srcset="images/logo-44.webp 1x, images/logo-88.webp 2x" type="image/webp">
+      <img src="images/BenAnd_Fit.png" alt="Logo Ben&Fit" width="44" height="44">
+    </picture>
+    <span class="nav-brand">BEN&FIT</span>
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="#about">À Propos</a></li>
+    <li><a href="#disciplines">Disciplines</a></li>
+    <li><a href="#services">Coaching</a></li>
+    <li><a href="#galerie">Galerie</a></li>
+    <li><a href="#contact" class="nav-cta">Me Contacter</a></li>
+  </ul>
+  <button class="nav-burger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu">
+    <span></span><span></span><span></span>
+  </button>
+<div class="nav-progress" aria-hidden="true"></div>
+</nav>
+
+<!-- MOBILE MENU DRAWER -->
+<ul id="mobile-menu" class="nav-drawer" role="list" aria-label="Menu mobile">
+  <li><a href="#about">À Propos</a></li>
+  <li><a href="#disciplines">Disciplines</a></li>
+  <li><a href="#services">Coaching</a></li>
+  <li><a href="#galerie">Galerie</a></li>
+  <li><a href="#contact" class="drawer-cta">Me Contacter</a></li>
+</ul>
+
+<!-- HERO -->
+<section class="hero" aria-label="Présentation">
+  <!-- Anneaux orbitaux -->
+  <div class="orbital-ring orbital-ring-1" aria-hidden="true"></div>
+  <div class="orbital-ring orbital-ring-2" aria-hidden="true"></div>
+
+    <div class="hero-left">
+    <p class="hero-tag">Coach CrossFit &amp; Hyrox · Nantes · Online</p>
+    <h1 class="hero-title">
+      COACH<br>
+      CROSSFIT<br>
+      <span>&amp; HYROX</span><br>
+      NANTES
+    </h1>
+    <p class="hero-desc">
+      17 ans de pratique sportive, 4 ans à transformer des athlètes. Une méthode exigeante pour CrossFit, Hyrox et préparation physique — en présentiel à Nantes comme en coaching online.
+    </p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary">Démarrer l'aventure</a>
+      <a href="#services" class="btn-outline">Voir les formules</a>
+    </div>
+    <div class="hero-stats" aria-label="Chiffres clés">
+      <div>
+        <div class="stat-num" aria-label="17 années">17</div>
+        <div class="stat-label">Années de sport</div>
+      </div>
+      <div>
+        <div class="stat-num" aria-label="4 ans">4</div>
+        <div class="stat-label">Ans de coaching</div>
+      </div>
+      <div>
+        <div class="stat-num" aria-label="Plus de 100 athlètes">100+</div>
+        <div class="stat-label">Athlètes coachés</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right" aria-hidden="true">
+    <picture>
+      <source
+        srcset="images/hero-480w.webp 480w, images/hero-720w.webp 720w, images/hero.webp 900w"
+        sizes="(max-width: 900px) 100vw, 50vw"
+        type="image/webp">
+      <img src="images/ChatGPT_Image_22_avr__2026__22_24_41.png"
+           alt=""
+           width="900" height="1200"
+           loading="eager" fetchpriority="high">
+    </picture>
+    <img class="hero-overlay-logo" src="images/logo.webp" alt="" width="200" height="200" loading="lazy">
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about" aria-labelledby="about-title">
+  <div class="about-img-wrap">
+    <img src="images/gallery-lemans.webp"
+         alt="Bene en compétition au Le Mans Contest"
+         width="900" height="1350"
+         loading="lazy">
+  </div>
+  <div class="about-content">
+    <p class="section-tag fade-up">Mon histoire</p>
+    <h2 class="section-title fade-up" id="about-title">
+      BENE,<br>
+      COACH &amp;<br>
+      <span>COMPÉTITEUR</span>
+    </h2>
+    <p class="about-text fade-up">
+      Je suis Benoit Allen, coach fondateur de Ben&amp;Fit depuis 2021, basé à Nantes. On m'appelle Bene. Le sport, c'est ma vie depuis 17 ans — une passion qui a forgé mon caractère avant de devenir ma vocation.
+    </p>
+    <p class="about-text fade-up">
+      Je me suis lancé dans le coaching il y a 4 ans avec une conviction simple : chaque athlète mérite un suivi taillé sur mesure, pas une méthode industrielle. Je compète moi-même en CrossFit et en Hyrox, ce qui me permet de te coacher avec des yeux d'athlète — pas juste de technicien.
+    </p>
+    <p class="about-text fade-up">
+      Mon accompagnement s'adresse aux sportifs de Nantes et de son agglomération, mais aussi aux athlètes à distance qui veulent un coaching online précis, structuré et vraiment suivi.
+    </p>
+    <p class="about-text fade-up">
+      Mon approche ? Exigeante sur le fond, humaine dans la forme. On va travailler dur ensemble, et tu vas progresser.
+    </p>
+    <ul class="about-tags fade-up" aria-label="Spécialités">
+      <li class="tag">CrossFit</li>
+      <li class="tag">Hyrox</li>
+      <li class="tag">Force &amp; Conditionnement</li>
+      <li class="tag">Suivi Nutritionnel</li>
+      <li class="tag">Prépa Compétition</li>
+    </ul>
+  </div>
+</section>
+
+<!-- DISCIPLINES -->
+<section class="disciplines" id="disciplines" aria-labelledby="disc-title">
+  <div class="section-header">
+    <p class="section-tag fade-up">Ce que je fais</p>
+    <h2 class="section-title fade-up" id="disc-title">MES DISCIPLINES</h2>
+  </div>
+  <div class="disc-grid">
+    <article class="disc-card fade-up">
+      <div class="disc-number" aria-hidden="true">01</div>
+      <div class="disc-icon" aria-hidden="true">⚡</div>
+      <h3 class="disc-title">CrossFit</h3>
+      <p class="disc-desc">Fonctionnelle, intense et constamment variée — la méthode CrossFit développe ta force, ton endurance et ta puissance de façon globale. Idéale pour progresser à tous les niveaux, du débutant à l'athlète confirmé.</p>
+    </article>
+    <article class="disc-card fade-up">
+      <div class="disc-number" aria-hidden="true">02</div>
+      <div class="disc-icon" aria-hidden="true">🏋️</div>
+      <h3 class="disc-title">Hyrox</h3>
+      <p class="disc-desc">La course fitness qui explose les frontières entre sport de force et d'endurance. 8 km de run entrecoupés de 8 stations fonctionnelles — une discipline que je vis de l'intérieur pour mieux t'y préparer.</p>
+    </article>
+    <article class="disc-card fade-up">
+      <div class="disc-number" aria-hidden="true">03</div>
+      <div class="disc-icon" aria-hidden="true">🎯</div>
+      <h3 class="disc-title">Prépa Compétition</h3>
+      <p class="disc-desc">Tu vises un Open, un Throwdown ou une Hyrox officielle ? Je construis avec toi un plan périodisé, un pic de forme ciblé et une stratégie de course adaptée à ton profil et à ton objectif.</p>
+    </article>
+    <article class="disc-card fade-up">
+      <div class="disc-number" aria-hidden="true">04</div>
+      <div class="disc-icon" aria-hidden="true">💪</div>
+      <h3 class="disc-title">Force &amp; Conditionnement</h3>
+      <p class="disc-desc">Squat, deadlift, Olympic lifting, gymnastic skills — on construit une base solide et des patterns moteurs efficaces. Moins de blessures, plus de performance. Le fondement de tout le reste.</p>
+    </article>
+    <article class="disc-card fade-up">
+      <div class="disc-number" aria-hidden="true">05</div>
+      <div class="disc-icon" aria-hidden="true">🔬</div>
+      <h3 class="disc-title">Coaching Online</h3>
+      <p class="disc-desc">Peu importe où tu te trouves, le coaching ne s'arrête pas. Plans d'entraînement personnalisés, suivi vidéo des mouvements, feedback hebdomadaire et adaptation continue selon tes retours.</p>
+    </article>
+    <article class="disc-card fade-up">
+      <div class="disc-number" aria-hidden="true">06</div>
+      <div class="disc-icon" aria-hidden="true">🥗</div>
+      <h3 class="disc-title">Nutrition &amp; Récupération</h3>
+      <p class="disc-desc">La performance se joue aussi dans l'assiette et au lit. Conseils nutritionnels adaptés à tes objectifs, protocoles de récupération et gestion de la charge — pour durer et performer sur le long terme.</p>
+    </article>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services" aria-labelledby="services-title">
+  <div class="section-header">
+    <p class="section-tag fade-up">Tarifs</p>
+    <h2 class="section-title fade-up" id="services-title">
+      FORMULES DE <span class="accent-brand">COACHING</span>
+    </h2>
+  </div>
+  <div class="services-grid">
+    <article class="service-card fade-up">
+      <p class="service-price" aria-label="77 euros">77 €</p>
+      <p class="service-period">par mois · engagement 4 mois</p>
+      <h3 class="service-name">Essentia Plus</h3>
+      <ul class="service-features" aria-label="Inclus dans Essentia Plus">
+        <li>Programme sportif sur-mesure</li>
+        <li>Correction technique</li>
+        <li>Réponses sous 48h</li>
+        <li>Conseils nutrition</li>
+        <li>Bilan hebdomadaire détaillé</li>
+        <li>2 premiers mois en 1 paiement</li>
+      </ul>
+      <a href="#contact" class="service-cta">Choisir Essentia Plus</a>
+    </article>
+    <article class="service-card featured fade-up" aria-label="Formule recommandée">
+      <p class="service-price" aria-label="109 euros">109 €</p>
+      <p class="service-period">par mois · engagement 4 mois</p>
+      <h3 class="service-name">Tutto Bene</h3>
+      <ul class="service-features" aria-label="Inclus dans Tutto Bene">
+        <li>Sport + nutrition sur-mesure</li>
+        <li>Support quotidien 7j/7</li>
+        <li>Réponses rapides garanties</li>
+        <li>Progression optimisée</li>
+        <li>1 visio par mois</li>
+        <li>2 premiers mois en 1 paiement</li>
+      </ul>
+      <a href="#contact" class="service-cta">Choisir Tutto Bene</a>
+    </article>
+    <article class="service-card fade-up">
+      <p class="service-price" aria-label="255 euros">255 €</p>
+      <p class="service-period">par mois · engagement 3 mois</p>
+      <h3 class="service-name">Bene Evoluzione</h3>
+      <ul class="service-features" aria-label="Inclus dans Bene Evoluzione">
+        <li>Coaching premium</li>
+        <li>Tout le contenu de Tutto Bene</li>
+        <li>2 visios par semaine</li>
+        <li>Messages quotidiens</li>
+        <li>Analyses vidéo illimitées</li>
+        <li>Ajustements constants training &amp; nutrition</li>
+        <li>Coaching sommeil, stress, récupération</li>
+        <li>Bilan structuré chaque semaine</li>
+        <li>3 mois réglés en 1 paiement</li>
+      </ul>
+      <a href="#contact" class="service-cta">Choisir Bene Evoluzione</a>
+    </article>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="galerie" aria-labelledby="gallery-title">
+  <p class="section-tag fade-up">En action</p>
+  <h2 class="section-title fade-up" id="gallery-title">DANS L'<span>ARÈNE</span></h2>
+  <div class="gallery-grid" role="list" aria-label="Galerie photos">
+    <div class="gallery-item span-col" role="listitem">
+      <picture>
+        <source srcset="images/gallery-main-700w.webp 700w, images/gallery-main.webp 1365w"
+                sizes="(max-width: 900px) 100vw, 55vw"
+                type="image/webp">
+        <img src="images/DSC02698.jpg"
+             alt="Bene lors d'une compétition – overhead press"
+             width="1365" height="2048"
+             loading="lazy">
+      </picture>
+    </div>
+    <div class="gallery-item" role="listitem">
+      <img src="images/gallery-lemans.webp"
+           alt="Bene au Le Mans Contest – rowing machine"
+           width="900" height="1350"
+           loading="lazy">
+    </div>
+    <div class="gallery-item" role="listitem">
+      <img src="images/gallery-throwdown.webp"
+           alt="CrossFit Throwdown 2024"
+           width="900" height="1350"
+           loading="lazy">
+    </div>
+    <div class="gallery-item gallery-wide" role="listitem">
+      <img src="images/gallery-main.webp"
+           alt="Bene – coaching CrossFit à Nantes"
+           width="1365" height="2048"
+           loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" aria-labelledby="testi-title">
+  <div class="section-header">
+    <p class="section-tag fade-up">Ils témoignent</p>
+    <h2 class="section-title fade-up" id="testi-title">CE QU'ILS <span>DISENT</span></h2>
+  </div>
+  <div class="testi-grid">
+    <article class="testi-card fade-up">
+      <div class="testi-stars" aria-label="5 étoiles">★★★★★</div>
+      <blockquote class="testi-text">Bene a complètement transformé mon approche du CrossFit. En 6 mois, j'ai progressé techniquement et gagné en confiance. Son suivi est béton, il répond toujours présent.</blockquote>
+      <p class="testi-author">Marie L.</p>
+      <p class="testi-role">CrossFiteuse — coaching depuis 8 mois</p>
+    </article>
+    <article class="testi-card fade-up">
+      <div class="testi-stars" aria-label="5 étoiles">★★★★★</div>
+      <blockquote class="testi-text">J'avais une Hyrox en ligne de mire et aucune idée de comment m'y préparer. La méthode de Bene est structurée, progressive et taillée pour moi. J'ai terminé avec un chrono dont je suis fier.</blockquote>
+      <p class="testi-author">Thomas R.</p>
+      <p class="testi-role">Hyrox Nantes 2024 — finisher</p>
+    </article>
+    <article class="testi-card fade-up">
+      <div class="testi-stars" aria-label="5 étoiles">★★★★★</div>
+      <blockquote class="testi-text">Le coaching online avec Bene, c'est du sérieux. Pas de programme générique — chaque semaine est adaptée à mes retours. La disponibilité et le feedback vidéo font vraiment la différence.</blockquote>
+      <p class="testi-author">Camille D.</p>
+      <p class="testi-role">Coaching online — Lyon</p>
+    </article>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<div class="cta-strip" role="complementary" aria-label="Appel à l'action">
+  <p class="cta-strip-title">PRÊT À FRANCHIR<br>UN NOUVEAU PALIER ?</p>
+  <a href="#contact" class="btn-dark">Prendre rendez-vous →</a>
+</div>
+
+<!-- CONTACT -->
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <div class="contact-info">
+    <p class="section-tag fade-up">Contacte-moi</p>
+    <h2 class="section-title fade-up" id="contact-title">ON EN<br><span>PARLE ?</span></h2>
+    <p class="about-text about-text--top fade-up">
+      Que tu cherches à débuter, à te dépasser ou à préparer une compétition — je suis là pour t'accompagner. Envoie-moi un message, je réponds rapidement.
+    </p>
+    <h3>📍 Localisation</h3>
+    <p>Nantes, Pays de la Loire<br>Coaching en présentiel &amp; online</p>
+    <h3>📱 Instagram</h3>
+    <p><a href="https://www.instagram.com/bene__fit" target="_blank" rel="noopener noreferrer" class="link-accent">@bene__fit</a></p>
+    <h3>⏰ Disponibilités</h3>
+    <p>Lundi → Samedi<br>Matin &amp; Soir selon les créneaux</p>
+    <h3>🏋️ Box partenaires</h3>
+    <p>Nantes et agglomération</p>
+  </div>
+
+  <div>
+    <!-- Honeypot: invisible aux humains, rempli par les bots -->
+    <form id="contact-form" class="contact-form" novalidate aria-label="Formulaire de contact">
+      <input name="hp_field" type="text" tabindex="-1" autocomplete="off"
+        class="visually-trap"
+        aria-hidden="true">
+      <div class="form-row">
+        <div>
+          <label for="prenom" class="sr-only">Prénom</label>
+          <input id="prenom" name="prenom" type="text" placeholder="Prénom *"
+                 required autocomplete="given-name" maxlength="60">
+        </div>
+        <div>
+          <label for="nom" class="sr-only">Nom</label>
+          <input id="nom" name="nom" type="text" placeholder="Nom *"
+                 required autocomplete="family-name" maxlength="80">
+        </div>
+      </div>
+      <label for="email" class="sr-only">Email</label>
+      <input id="email" name="email" type="email" placeholder="Email *"
+             required autocomplete="email" maxlength="120">
+      <label for="telephone" class="sr-only">Téléphone</label>
+      <input id="telephone" name="telephone" type="tel" placeholder="Téléphone"
+             autocomplete="tel" maxlength="20">
+      <label for="objectif" class="sr-only">Ton objectif</label>
+      <select id="objectif" name="objectif">
+        <option value="" disabled selected>Ton objectif</option>
+        <option>Essentia Plus</option>
+        <option>Tutto Bene</option>
+        <option>Bene Evoluzione</option>
+        <option>Débuter le CrossFit</option>
+        <option>Préparer une Hyrox</option>
+        <option>Préparer une compétition CrossFit</option>
+        <option>Améliorer ma technique</option>
+        <option>Perte de poids / Rééquilibrage</option>
+        <option>Coaching online</option>
+        <option>Autre</option>
+      </select>
+      <label for="message" class="sr-only">Ton message</label>
+      <textarea id="message" name="message"
+                placeholder="Dis-moi en plus sur toi et ce que tu cherches..."
+                maxlength="1000"></textarea>
+      <button type="submit" id="submit-btn">Envoyer mon message →</button>
+    </form>
+    <div id="form-success" class="form-success" role="alert" aria-live="polite">
+      <p>EMAIL PRÊT À ENVOYER ✓</p>
+      <p>Ton application mail s'ouvre avec le message prérempli. Tu peux l'envoyer directement.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="#" class="footer-logo" aria-label="Ben&Fit — retour en haut">
+    <img src="images/logo.webp" alt="" width="40" height="40" loading="lazy">
+    <span>BEN&FIT</span>
+  </a>
+  <ul class="footer-links" role="list">
+    <li><a href="#about">À Propos</a></li>
+    <li><a href="#disciplines">Disciplines</a></li>
+    <li><a href="#services">Coaching</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <nav class="social-links" aria-label="Réseaux sociaux">
+    <a href="https://www.instagram.com/bene__fit" target="_blank" rel="noopener noreferrer" aria-label="Instagram @bene__fit">IG</a>
+  </nav>
+  <p class="footer-copy">© 2025 Ben&Fit · Coach CrossFit &amp; Hyrox · Nantes</p>
+</footer>
+
+<!-- Visually hidden helper (for screen readers) -->
+<style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}</style>
+
+<script src="/assets/main.js" defer></script>
+<script src="/assets/gsap.min.js" defer></script>
+<script src="/assets/ScrollTrigger.min.js" defer></script>
+<script src="/assets/lenis.min.js" defer></script>
+<script src="/assets/premium.js" defer></script>
+</body>
+</html>

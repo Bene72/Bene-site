@@ -1,0 +1,20 @@
+{
+  "name": "bene-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site vitrine Ben&Fit, coach CrossFit et Hyrox a Nantes",
+  "scripts": {
+    "dev": "npx serve . -p 3000",
+    "preview": "npx serve . -p 3000"
+  },
+  "devDependencies": {
+    "@fontsource/barlow": "^5.2.8",
+    "@fontsource/barlow-condensed": "^5.2.8",
+    "@fontsource/bebas-neue": "^5.2.7",
+    "serve": "^14.2.3"
+  },
+  "dependencies": {
+    "@studio-freight/lenis": "^1.0.42",
+    "gsap": "^3.15.0"
+  }
+}
