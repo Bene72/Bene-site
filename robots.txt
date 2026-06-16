@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bene-site.vercel.app/sitemap.xml
+
+# Bots agressifs
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /

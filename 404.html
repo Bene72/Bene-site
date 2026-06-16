@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page introuvable — Ben&Fit</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://bene-site.vercel.app/">
+<link rel="icon" href="images/favicon.png" type="image/png">
+<link rel="preload" href="/assets/fonts/bebas-neue-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :focus-visible { outline: 2px solid #e8c84a; outline-offset: 3px; }
+  body {
+    background: #0a1628; color: #f5f3ee;
+    font-family: 'Barlow', sans-serif; font-weight: 300;
+    min-height: 100vh;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    text-align: center; padding: 2rem;
+  }
+  .logo { height: 64px; width: 64px; object-fit: contain; margin-bottom: 2rem; opacity: 0.75; }
+  .code {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(6rem, 20vw, 12rem);
+    color: #e8c84a; line-height: 1; opacity: 0.12;
+    pointer-events: none; user-select: none;
+  }
+  h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    letter-spacing: 0.04em; margin-top: -1rem; margin-bottom: 1.5rem;
+  }
+  p { color: rgba(245,243,238,0.6); font-size: 1rem; line-height: 1.8; max-width: 480px; margin-bottom: 3rem; }
+  .btn {
+    background: #e8c84a; color: #0a1628;
+    padding: 0.9rem 2.5rem;
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.85rem; font-weight: 700;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    text-decoration: none; transition: background 0.2s;
+  }
+  .btn:hover, .btn:focus-visible { background: #c9a82e; }
+</style>
+</head>
+<body>
+  <img src="images/logo.webp" alt="Logo Ben&Fit" class="logo" width="64" height="64" loading="eager">
+  <p class="code" aria-hidden="true">404</p>
+  <h1>PAGE INTROUVABLE</h1>
+  <p>Cette page n'existe pas ou a été déplacée. Retourne à l'accueil pour explorer le site.</p>
+  <a href="/" class="btn">Retour à l'accueil →</a>
+</body>
+</html>
