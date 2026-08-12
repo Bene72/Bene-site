@@ -466,3 +466,141 @@ body::after {
   .footer-links-block, .footer-social-block { align-items: center; }
   .footer-luxury-links { align-items: center; }
 }
+
+
+/* =============================================================
+   BEN&FIT — MOTION V6 (intégration fusionnée)
+   Portée : uniquement ce qui n'entre PAS en conflit avec premium.js
+   (GSAP/ScrollTrigger reste seul responsable des reveals hero,
+   cards, gallery, nav-progress et parallaxe).
+   ============================================================= */
+
+:root {
+  --motion-ease: cubic-bezier(.22, 1, .36, 1);
+}
+
+/* Traitement d'image éditorial — compatible avec le scrub GSAP
+   (.about-img-wrap img / .gallery-item.span-col img), qui ne fait
+   qu'ajouter un yPercent au-dessus de ce scale de base. */
+.hero-right img:not(.hero-overlay-logo),
+.about-img-wrap img,
+.gallery-item img {
+  transform: scale(1.035);
+  transition: transform 1.4s var(--motion-ease), filter 900ms ease;
+}
+
+.hero-right img:not(.hero-overlay-logo) {
+  filter: grayscale(22%) contrast(1.04) saturate(.92);
+}
+
+.about-img-wrap img,
+.gallery-item img {
+  filter: grayscale(18%) contrast(1.03) saturate(.94);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.065);
+  filter: grayscale(0%) contrast(1.04) saturate(1);
+}
+
+/* Fin du shimmer permanent sur les textes dorés : l'or reste un
+   accent, pas un effet qui bouge en continu. On laisse volontairement
+   le shimmer sur .service-price (l'effet "prix qui brille" reste,
+   comme dans le zip) — dis-moi si tu veux aussi l'y retirer. */
+.stat-num,
+.hero-title span,
+.section-title span,
+.nav-brand,
+.footer-logo span,
+.footer-brand-name,
+.sig-big {
+  animation: none;
+  background-position: 50% center;
+}
+
+/* Voile éditorial plus riche que le dégradé de base. */
+.hero-right::after {
+  background:
+    linear-gradient(90deg, rgba(10,22,40,.98) 0%, rgba(10,22,40,.42) 18%, transparent 46%),
+    linear-gradient(0deg, rgba(10,22,40,.78) 0%, transparent 32%),
+    linear-gradient(180deg, rgba(10,22,40,.08), transparent 30%);
+}
+
+.about-img-wrap::after {
+  background:
+    linear-gradient(90deg, transparent 45%, rgba(17,32,64,.82) 100%),
+    linear-gradient(0deg, rgba(10,22,40,.38), transparent 35%);
+}
+
+/* Reflet au survol des boutons — n'a pas d'équivalent dans premium.js,
+   aucun conflit (pseudo-élément indépendant, pas de transform partagé). */
+.btn-primary,
+.service-cta,
+.btn-dark {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::after,
+.service-cta::after,
+.btn-dark::after {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 -120%;
+  width: 55%;
+  background: linear-gradient(105deg, transparent, rgba(255,255,255,.34), transparent);
+  transform: skewX(-18deg);
+  transition: left 700ms var(--motion-ease);
+  pointer-events: none;
+}
+
+.btn-primary:hover::after,
+.service-cta:hover::after,
+.btn-dark:hover::after { left: 140%; }
+
+/* Halo directionnel au curseur sur les cards — piloté par --mx/--my,
+   posés par initCardLight() dans main.js. Couche indépendante de
+   l'opacity/transform que GSAP anime sur ces mêmes cards : pas de
+   conflit possible. */
+.disc-card,
+.service-card,
+.testi-card {
+  isolation: isolate;
+}
+
+.disc-card::after,
+.service-card::after,
+.testi-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(232,200,74,.09), transparent 34%);
+  opacity: 0;
+  transition: opacity 450ms ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.disc-card:hover::after,
+.service-card:hover::after,
+.testi-card:hover::after { opacity: 1; }
+
+.disc-card > *,
+.service-card > *,
+.testi-card > * { position: relative; z-index: 1; }
+
+/* Densification douce de la nav au scroll (nav--scrolled est déjà
+   togglée par premium.js — ici on ne fait qu'ajouter la transition). */
+nav {
+  transition: padding 500ms var(--motion-ease), background 500ms ease, box-shadow 500ms ease;
+}
+
+@media (max-width: 900px) {
+  .hero-right img:not(.hero-overlay-logo) { transform: scale(1.02); }
+  /* Effets lourds désactivés sur mobile : les anneaux orbitaux tournent
+     en continu (90s/130s + "breathe"), pur poids visuel inutile sur
+     petit écran — absent du fichier de base, restauré depuis le zip. */
+  .hero-right::before,
+  .orbital-ring,
+  .hero-overlay-logo { display: none; }
+}
