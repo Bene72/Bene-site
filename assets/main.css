@@ -644,3 +644,13 @@ nav {
 .disc-card:hover { background: rgba(0,86,179,.80) !important; }
 .service-card.featured { background: #000 !important; }
 .service-card:hover .liquid-price { filter: drop-shadow(0 0 10px var(--red-glow)) brightness(1.15); }
+
+/* ── FORMULES DE COACHING : fond gris très foncé (même que le formulaire de contact) ── */
+.services { background: var(--navy-mid); color: var(--white); }
+.services .section-title { color: #fff; }
+.service-card { background: rgba(255,255,255,.06); border-bottom-color: var(--red); box-shadow: 0 20px 60px rgba(0,0,0,.35), inset 0 1px rgba(255,255,255,.06); }
+.service-card:hover { box-shadow: 0 40px 90px rgba(0,0,0,.5), inset 0 1px rgba(255,255,255,.10), 0 0 50px rgba(0,123,255,.22); }
+.service-name { color: #fff; }
+.service-period { color: rgba(255,255,255,.5); }
+.service-features li { color: rgba(255,255,255,.72); border-bottom-color: rgba(255,255,255,.10); }
+.service-card.featured { background: #000 !important; border: 1px solid rgba(0,123,255,.55); }
