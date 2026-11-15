@@ -74,3 +74,11 @@ npx vercel --prod
 | Fichier              | Avant    | Après  | Gain  |
 |----------------------|----------|--------|-------|
 | Images totales       | 1 880 KB | 392 KB | -79%  |
+
+## Contenus BEN&FIT (non déployés)
+
+Ces dossiers sont dans le dépôt mais **exclus du site** (voir `.vercelignore`) :
+
+- `benfit-3d/` : fabrique de clips d'athlète 3D (scripts + exemple de l'arraché).
+- `benfit-reels/` : dépôt Reels et `fabrique-montage/` (scripts de montage des Reels).
+- Vidéos lourdes : Releases GitHub « rushs » et « Bibliothèque ».
